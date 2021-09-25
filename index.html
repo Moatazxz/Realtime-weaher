@@ -1,0 +1,106 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+<body>
+  <nav class="navbar d-flex justify-content-center  ">
+    <div class="d-flex justify-content-center align-items-center">
+      <i class="fab fa-cloudversify m-color b-size"></i> 
+      <span class="ms-2 text-white fw-bolder  fs-1">Weather</span>
+    </div>
+  </nav>
+  <div id="sky" class=" w-100 position-absolute  overflow-hidden ">
+    <div id="cloud1" class="cloud"></div>
+    <div id="cloud2" class="cloud"></div>
+    <div id="cloud3" class="cloud"></div>
+    <div id="cloud4" class="cloud"></div>
+    <div id="cloud5" class="cloud"></div>
+    <div id="cloud6" class="cloud"></div>
+    <div id="cloud7" class="cloud"></div>
+   
+ </div>
+ <p id="alertP" class="alert-color mt-5 o-0 mb-0 text-capitalize fs-6 fst text-center ">Please enter right name of your countery</p>
+ <div class="input-group w-50 m-auto mt-0 mb-2">
+
+  <input id="findInput" type="text" class="form-control d-inline-block" placeholder="Countery"  >
+  <button class="bt px-3 text-white border-0 rounded-3 m-bg" type="button" id="find">Find</button>
+</div>
+<p id="countery" class="fs-1 text-center text-capitalize fw-bold">london</p>
+<div class="container">
+ <div class=" row mt-1 gx-2 weather text-white position-relative ">
+  
+
+  <div id="day1" class=" rounded-3 col-lg-4 px-3 m-bg">
+    <div class="d-flex flex-row justify-content-between fs-5 mt-1 ">
+      <p id="d1" class="fw-light m-0">day</p>
+      <p id="dt1" class="fw-light m-0">date</p>
+    </div>
+    <div class="row d-flex mt-5 justify-content-center align-items-center">
+     <div class="col-8">
+       <p id="degre1">45°C</p>  
+     </div>
+     <div  class="col-4">
+       <img id="icon1"  src="" alt="">
+     </div>
+    </div>
+    <div>
+  <div class="d-flex justify-content-center align-items-center">
+        <p id="status1" class="text-center mt-3 me-3 m-color text-capitalize fw-bold s-fw">cloudy</p>
+        <div>
+          <img id="icon_1_2" src="" alt="">
+        </div>
+  </div>
+    </div>
+
+  </div>
+
+  <div id="day2" class=" rounded-3 col-lg-4 px-3 text-center s-bg">
+    
+      <p id="d2" class="fw-light text-center mt-1"></p>
+
+      <div class="d-flex flex-column justify-content-center mt-5">
+        <div class="mb-3">
+          <img  id="icon2" src="" alt="">
+        </div>
+        <div>
+         <p id="degre2" class="fs-2 mb-2"></p>
+        </div>
+        <p id="status2" class="text-center mt-4 m-color text-capitalize fw-bold s-fw"></p>
+      </div>
+   </div>
+  <div id="day3" class=" rounded-3 col-lg-4 px-3 text-center m-bg ">
+    <p id="d3" class="fw-light text-center mt-1"></p>
+
+    <div class="d-flex flex-column justify-content-center mt-5">
+      <div class="mb-3">
+        <img  id="icon3" src="" alt="">
+      </div>
+      <div>
+       <p id="degre3" class="fs-2 mb-2"> </p>
+      </div>
+      <p id="status3" class="text-center mt-4 m-color text-capitalize fw-bold s-fw"></p>
+    </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+  
+
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
